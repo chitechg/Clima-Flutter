@@ -11,7 +11,7 @@ class NetworkHelper {
     http.Response response = await http.get(urlParse);
     if (response.statusCode == 200) {
       String data = response.body;
-      //print(data);
+      print(data);
 
       return jsonDecode(data);
     }
